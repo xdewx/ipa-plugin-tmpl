@@ -1,7 +1,9 @@
 
 ## 约定
 
-1. `pnpm build`之前需要更改`vite.config.ts`设置`base=https://ipa-plugin.localhost/[pluginName]`
+1. `pnpm build`之前需要更改`vite.config.ts`
+  1. 设置`base=https://ipa-plugin.localhost/[pluginName]`
+  2. 设置`build.outDir=./[pluginName]`,
 1. `public/favicon.ico`视为插件的图标
 1. `public/meta.json`中是插件的摘要信息
 ```json
@@ -21,4 +23,12 @@
   ]
 }
 
+```
+
+1. 监听`message`事件获取来自主窗口的事件，格式形如：
+```json
+{
+  "event":"",
+  "data":{}
+}
 ```

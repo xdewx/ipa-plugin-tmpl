@@ -11,7 +11,10 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://ipa-plugin.localhost/pluginUniqueName",
+  base: "https://ipa-plugin.localhost/demo",
+  build: {
+    outDir:"./demo"
+  },
   plugins: [
     vue(), vueJsx(),
     AutoImport({

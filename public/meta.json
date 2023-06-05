@@ -1,11 +1,14 @@
 {
-  "name": "",
-  "description": "",
-  "version": "",
-  "author": "",
-  "tags": [],
+  "name": "demo",
+  "description": "基于此模版可快速开发插件",
+  "version": "1.0.0",
+  "author": "xdewx",
+  "tags": ["测试"],
   "created_at": 1685694530738,
-  "url": "",
-  "search_scopes":[],
-  "actions":[]
+  "url": "https://github.com/xdewx/ipa-plugin-tmpl",
+  "search_scopes": [
+    { "label": "xxx", "value": "xxx" },
+    { "label": "yyy", "value": "yyy" }
+  ],
+  "actions": []
 }

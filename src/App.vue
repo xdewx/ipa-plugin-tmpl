@@ -1,5 +1,20 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+
+const handleMessage = (e: MessageEvent) => {
+  let req = JSON.parse(e.data as string) as SearchEvent
+  console.log(req)
+}
+
+onMounted(() => {
+  window.addEventListener("message", handleMessage)
+})
+
+onUnmounted(() => {
+  window.removeEventListener("message", handleMessage)
+})
+
+
 </script>
 
 <template>
@@ -9,7 +24,6 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
     </div>
   </header>
-
 </template>
 
 <style scoped>
