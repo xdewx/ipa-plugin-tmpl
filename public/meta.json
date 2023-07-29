@@ -6,9 +6,12 @@
   "tags": ["测试"],
   "created_at": 1685694530738,
   "url": "https://github.com/xdewx/ipa-plugin-tmpl",
-  "search_scopes": [
-    { "label": "xxx", "value": "xxx" },
-    { "label": "yyy", "value": "yyy" }
-  ],
+  "custom_search_box":{
+    "scopes": [
+      { "label": "xxx", "value": "xxx" },
+      { "label": "yyy", "value": "yyy" }
+    ],
+    "placeholder":""
+  },
   "actions": []
 }
