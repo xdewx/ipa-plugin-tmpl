@@ -15,9 +15,12 @@
   "tags": [], // 分类等
   "created_at": 1685694530738, //发布时间
   "url": "", //插件官网
-  "search_scopes":[ //用以配置插件可提供的搜索类型，没有可为[]
-    {"label":"xxx","value":"xxx"}
-  ],
+  "custom_search_box":{ 
+    "scopes":[ //用以配置插件可提供的搜索类型，没有可为[]
+      {"label":"xxx","value":"xxx"}
+    ],
+    "placeholder":"" //覆盖搜索框默认提示内容
+  },
   "actions":[ // 与主搜索框平齐的插件操作图标
     {"icon":"","name":"","click":"[event-name]"}
   ]
