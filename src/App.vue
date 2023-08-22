@@ -23,7 +23,11 @@ onUnmounted(() => {
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
+    <router-link to="/home" class="m-2">Home</router-link>
+    <router-link to="/about">关于</router-link>
   </header>
+
+  <router-view />
 </template>
 
 <style scoped>
